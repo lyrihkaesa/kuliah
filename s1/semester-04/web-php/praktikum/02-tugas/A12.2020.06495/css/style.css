@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+}
+
+.container table {
+  margin-left: 20px;
+}

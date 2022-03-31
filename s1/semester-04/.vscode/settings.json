@@ -1,0 +1,15 @@
+{
+  "java.project.sourcePaths": [
+    "pbo-java\\pertemuan\\01-pengantar",
+    "pbo-java\\pertemuan\\02-tipe-data",
+    "pbo-java\\pertemuan\\03-operator",
+    "pbo-java\\pertemuan\\04-struktur-kendali",
+    "pbo-java\\praktikum\\01-tugas-1-2\\A12.2020.06495",
+    "pbo-java\\praktikum\\02-tugas-2-2\\A12.2020.06495",
+    "pbo-java\\praktikum\\03-tugas-3-2\\A12.2020.06495",
+    "pbo-java\\praktikum\\04-tugas-4-2\\A12.2020.06495",
+    "pbo-java\\praktikum\\05-tugas-5-1\\A12.2020.06495"
+  ],
+  "java.format.settings.url": ".vscode/java-formatter.xml",
+  "java.project.outputPath": "pbo-java\\bin"
+}
