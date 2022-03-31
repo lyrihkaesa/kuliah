@@ -1,0 +1,60 @@
+{
+  "files.associations": {
+    "ostream": "cpp",
+    "*.tcc": "cpp",
+    "cmath": "cpp",
+    "iostream": "cpp"
+  },
+  "editor.tokenColorCustomizations": {
+    "[GitHub Dark Default]": {
+      "textMateRules": [
+        {
+          "scope": "keyword.control",
+          "settings": {
+            "fontStyle": "italic",
+            "foreground": "#C586C0"
+          }
+        },
+        {
+          "scope": ["storage.type", "entity.name.function.preprocessor.cpp"],
+          "settings": {
+            "fontStyle": "italic",
+            "foreground": "#569CD6"
+          }
+        },
+        {
+          "scope": ["string", "punctuation.definition.string"],
+          "settings": {
+            "foreground": "#CE9178"
+          }
+        },
+        {
+          "scope": ["comment", "punctuation.definition.comment"],
+          "settings": {
+            "fontStyle": "italic",
+            "foreground": "#6A9955"
+          }
+        },
+        {
+          "scope": ["variable.other.global.cpp", "entity.name.function.cpp"],
+          "settings": {
+            "foreground": "#DCDCAA"
+          }
+        },
+        {
+          "scope": ["entity.name.type.cpp"],
+          "settings": {
+            "fontStyle": "italic",
+            "foreground": "#4EC9B0"
+          }
+        },
+        {
+          "scope": "entity.name.function.cpp",
+          "settings": {
+            "foreground": "#D69A00"
+          }
+        }
+      ]
+    }
+  }
+}
