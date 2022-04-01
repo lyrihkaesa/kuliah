@@ -40,7 +40,7 @@ public class NamaFile {
 
 - Cari `env` pada `search windows 10`,
 
-![env](../pbo-java/z-lab-pengujian-img/win-search-env.png)
+![env](z-lab/img/win-search-env.png)
 
 - Klik `Environment Variabel`
 - Pada `System variables` cari `Path` lalu `Edit`
