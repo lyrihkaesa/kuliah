@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript DOM</title>
+  </head>
+  <body>
+    <div id="judul"></div>
+    <ol class="order-list">
+      <li class="list-items">ini1</li>
+      <li class="list-items">ini2</li>
+      <li class="list-items">ini3</li>
+    </ol>
+    <input type="text" name="username" />
+    <button onclick="this.innerText = 'Hiiiii'">Click Me!</button>
+    <button id="submit">Submit</button>
+
+    <p id="p1"></p>
+    <div id="block1" class="block1"></div>
+    <ul>
+      <li class="unlist-items"></li>
+      <li class="unlist-items"></li>
+    </ul>
+    <!-- Dibawah ini adalah Script JavaScript -->
+    <!-- Start Script JavaScript -->
+    <script>
+      // Mendapatkan elemen by id
+      let judul = document.getElementById("judul");
+      judul.innerHTML = "Ini Judul dari ID";
+      // Mendapatkan elemen by class
+      // return nodeList
+      let classListItems = document.getElementsByClassName("list-items");
+      classListItems[1].innerHTML = "baru ke-2";
+      // Mendapatkan elemen by tag
+      // return nodeList
+      let tagListItems = document.getElementsByTagName("li");
+      tagListItems[2].innerText = "ini dimodif by tag";
+      // Mendapatkan elemen by name
+      // return nodeList
+      let nameInput = document.getElementsByName("username");
+      nameInput[0].value = "hallo world";
+
+      // Mendapatkan elemen dengan queryselector
+      // queryselector by id
+      let p1 = document.querySelector("#p1");
+      // queryselector by class
+      let block1 = document.querySelector(".block1");
+      // queryselector by tag
+      let ul = document.querySelector("ul");
+      // queryselector by specific
+      let specificLi = document.querySelector("ul > li");
+      // queryselector by properti name
+      let nameUserName = document.querySelector("[name='username']");
+      // queryselector all sama seperti queryselector hanya saja dia majemuk atau banyak
+      // returnnya nodeList
+      let li = document.querySelectorAll("li.unlist-items");
+
+      // modifikasi elemen dengan innerhtml
+      document.getElementById("block1").innerHTML = "Block Satu";
+      document.getElementById("judul").innerHTML = "<h1>Ini adalah Judul</h1>";
+      // modifikasi elemen dengan innertext
+      document.getElementById("p1").innerText = "Hallo Paragraph 1";
+
+      // modifikasi style elemen
+      document.getElementById("p1").style.backgroundColor = "red";
+
+      // membuat dan menambahkan elemen
+      let div = document.createElement("div");
+      div.innerHTML = "<hr> Ini div <hr>";
+      // menambahkan elemen ke body
+      document.body.appendChild(div);
+      // menghapus elemen
+      document.body.removeChild(nameUserName);
+
+      // menulis elemen secara langsung
+      document.write("<h3>Ini header 3</h3>");
+      document.writeln("<h2>Ini header 2</h2>");
+
+      // event listener
+      document.getElementById("submit").addEventListener("click", alertHallo);
+      function alertHallo() {
+        alert("Hallo");
+      }
+
+      let parent = document.getElementById("judul").parentNode;
+    </script>
+  </body>
+</html>
