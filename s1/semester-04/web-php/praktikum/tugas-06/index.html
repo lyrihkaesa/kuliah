@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <!-- Dibawah ini adalah Script JavaScript -->
+    <!-- Start Script JavaScript -->
+    <script>
+      document.writeln("Hallo World");
+      // Kode: Membuat Array
+      let arrayKosong = [];
+      let arrayNama = ["Kukuh", "Setya", "Arumansyah"];
+      // Memanggil
+      console.table(arrayNama);
+      // Kode: Menambah Value Array
+      arrayNama.push("Budi", "Arvi");
+      // Memanggil
+      console.table(arrayNama);
+      // Kode: Mengganti Value Array
+      arrayNama[0] = "Kaesa";
+      // Memanggil
+      console.table(arrayNama);
+
+      //   Function
+      // Membuat Function
+      function halloName() {
+        document.writeln("<p>Ini Fungsi Hallo Name</p>");
+      }
+      //   Memanggil Function
+      halloName();
+      halloName(); // boleh dipanggil berkali-kali
+
+      //   Membuat Function dengan Parameter
+      function sayOk(firstName, lastName) {
+        document.writeln(`<p>Ini Fungsi sayOK, Oke ${firstName} ${lastName}</p>`);
+      }
+      //   Memanggil Function dengan Parameter
+      sayOk("Kukuh", "Setya");
+      sayOk("Kaesa", "Lyrih"); // boleh dipanggil berkali-kali
+
+      //   Membuat Function dengan Parameter dan return value
+      function sayHallo(firstName, lastName) {
+        const say = `Ini Fungsi sayHallo, Hallo ${firstName} ${lastName}`;
+        return say;
+      }
+
+      //   Memanggil Function dengan Parameter dan return value
+      const result = sayHallo("Kukuh", "Setya");
+      document.writeln(`<p>${result}</p>`);
+
+      //   Membuat Function dengan Parameter dan return value lebih dari satu
+      function getRank(value) {
+        if (value >= 90) {
+          return "A";
+        } else if (value >= 80) {
+          return "B";
+        } else if (value >= 70) {
+          return "C";
+        } else if (value >= 60) {
+          return "D";
+        } else {
+          return "E";
+        }
+      }
+
+      const resultRank = getRank(75);
+      document.writeln(`<p>Ini Fungsi getRank(75), Ket: ${resultRank}</p>`);
+
+      //   Menghentikan Eksekusi dengan Return
+      function isContains(array, searchValue) {
+        for (const iterator of array) {
+          if (iterator === searchValue) {
+            return true;
+          }
+        }
+      }
+
+      console.info(isContains([1, 2, 3, 4, 5, 6, 7], 3));
+    </script>
+    <!-- Include Script JavaScript -->
+    <script src="js/myscript.js"></script>
+    <!-- End Script JavaScript -->
+  </body>
+</html>

@@ -1,0 +1,1 @@
+document.writeln("My Script");
