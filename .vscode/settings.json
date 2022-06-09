@@ -1,8 +1,10 @@
 {
-  "java.format.settings.url": ".vscode/java-formatter.xml",
   "java.project.outputPath": "s1\\semester-04\\oop-java\\bin",
-  "java.project.sourcePaths": [
-    "s1\\semester-04\\oop-java\\praktikum\\tugas-06-2\\A12.2020.06495",
-    "s1\\semester-04\\oop-java\\praktikum\\tugas-05-1\\A12.2020.06495"
-  ]
+  "java.project.sourcePaths": ["s1\\semester-04\\oop-java\\praktikum\\tugas-11-1\\A12.2020.06495"],
+  "java.format.settings.url": ".vscode/java-formatter.xml",
+  "[java]": {
+    "editor.detectIndentation": true
+  },
+  "java.project.referencedLibraries": ["lib/**/*.jar", "c:\\Development\\java\\mysql-connector-java-8.0.29\\mysql-connector-java-8.0.29.jar"],
+  "liveServer.settings.port": 5501
 }
