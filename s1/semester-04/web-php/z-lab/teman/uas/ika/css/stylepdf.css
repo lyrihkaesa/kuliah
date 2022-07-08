@@ -1,0 +1,21 @@
+table {
+    width:100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding:15px;
+    border-bottom:1px solid;
+}
+
+th {
+    height:50px;
+    background-color:cadetblue;
+}
+
+tr:nth-child(even) {background-color:#dadae7}
+
+h1 small {
+    font-size: 150%;
+}
+
